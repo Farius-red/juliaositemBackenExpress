@@ -21,6 +21,11 @@ jobs:
       - name: Comprueba la versión de Node.js
         run: node -v
 
+      - name: Configura Git
+        run: |
+          git config --global user.email "zigmainflables@gmail.com"
+          git config --global user.name "Daniel Juliao"
+
       - name: Instala las dependencias
         run: npm install
 
