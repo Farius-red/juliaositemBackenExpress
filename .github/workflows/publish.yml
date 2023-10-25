@@ -1,0 +1,30 @@
+name: Publicar en npm con Node.js v20.9.0
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del código fuente
+        uses: actions/checkout@v2
+
+      - name: Configura Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.9.0'
+
+      - name: Comprueba la versión de Node.js
+        run: node -v
+
+      - name: Instala las dependencias
+        run: npm install
+
+      - name: Publica en npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
