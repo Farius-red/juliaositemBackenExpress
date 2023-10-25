@@ -16,7 +16,7 @@ jobs:
       - name: Configura Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20.9.0'
+          node-version: '20.9.0'  # Cambia esto a una versión válida de Node.js
 
       - name: Comprueba la versión de Node.js
         run: node -v
@@ -26,6 +26,5 @@ jobs:
 
       - name: Publica en npm
         run: |
-        npm config set '//registry.npmjs.org/:_authToken' ${{ secrets.NPM_AUTH_TOKEN }}
-        npm publish
-
+          npm config set '//registry.npmjs.org/:_authToken' ${{ secrets.NPM_AUTH_TOKEN }}
+          npm publish
