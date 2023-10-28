@@ -1,7 +1,7 @@
 {
   "name": "juliaositembackenexpress",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "libreria dtos y demas en comun",
   "main": "index.ts",
   "scripts": {
     "serve": "nodemon --exec ts-node --project tsconfig.json index.ts",
