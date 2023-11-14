@@ -4,4 +4,6 @@ export class CountryDTO {
   idCountry: number = 0;
   name: string = '';
   cities: CityDTO | null = null;
+  codigoIso:string ='';
+  url:string ='';
 }
