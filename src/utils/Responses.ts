@@ -5,7 +5,6 @@ export class Responses<E> {
   buildResponse( tipoRespuesta: ResponseType,datos: E)
   : PlantillaResponse<E> {
     return {
-      isRta: tipoRespuesta.isRta,
       message: tipoRespuesta.message,
       httpStatus: tipoRespuesta.httpStatus,
       data: datos,
