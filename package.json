@@ -1,6 +1,6 @@
 {
   "name": "juliaositembackenexpress",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "libreria dtos y demas en comun",
   "main": "index.ts",
   "scripts": {
@@ -15,7 +15,6 @@
   "author": "Daniel juliao",
   "license": "ISC",
   "dependencies": {
-  
     "@nestjs/common": "^10.2.4",
     "dotenv": "^16.3.1",
     "express": "^4.18.2"
