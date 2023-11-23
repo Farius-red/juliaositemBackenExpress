@@ -1,6 +1,6 @@
 {
   "name": "juliaositembackenexpress",
-  "version": "1.0.7",
+  "version": "1.0.5",
   "description": "libreria dtos y demas en comun",
   "main": "index.ts",
   "scripts": {
