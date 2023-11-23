@@ -29,8 +29,6 @@ jobs:
       - name: Instala las dependencias
         run: npm install
 
-      - name: Incrementar la versión
-        run: npm version patch  # Incrementa la versión en función de tus necesidades
 
       - name: Publica en npm
         run: |
