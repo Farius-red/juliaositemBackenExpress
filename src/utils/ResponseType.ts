@@ -5,7 +5,7 @@ export class ResponseType {
   constructor(
     public readonly code: number,
     public readonly message: string,
-    public readonly isRta: boolean,
+    public readonly rta: boolean,
     public readonly httpStatus: HttpStatus
   ) {}
 
